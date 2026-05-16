@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2000');
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+/* MAIN CARD */
+
+.card{
+
+    width:420px;
+
+    padding:40px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.5);
+
+    text-align:center;
+
+    animation:fadeIn 0.7s ease;
+}
+
+/* HEADINGS */
+
+h1{
+    margin-bottom:25px;
+    font-size:34px;
+
+    background:linear-gradient(90deg,#00c6ff,#0072ff);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+h2{
+    margin-top:20px;
+    font-size:24px;
+    color:#ffffff;
+}
+
+/* SELECT BOX */
+
+select{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:14px;
+
+    outline:none;
+
+    font-size:16px;
+
+    background:rgba(255,255,255,0.12);
+
+    color:white;
+
+    cursor:pointer;
+}
+
+option{
+    color:black;
+}
+
+/* BUTTON */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:25px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 12px 25px rgba(0,114,255,0.4);
+}
+
+/* FOOTER */
+
+.footer{
+
+    position:fixed;
+
+    bottom:0;
+
+    width:100%;
+
+    text-align:center;
+
+    padding:14px;
+
+    background:rgba(0,0,0,0.6);
+
+    backdrop-filter:blur(8px);
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    color:#ddd;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px) scale(0.95);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}

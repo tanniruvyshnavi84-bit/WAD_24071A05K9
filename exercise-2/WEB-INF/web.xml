@@ -1,0 +1,13 @@
+<web-app>
+
+<servlet>
+    <servlet-name>PlanServlet</servlet-name>
+    <servlet-class>PlanServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>PlanServlet</servlet-name>
+    <url-pattern>/plan</url-pattern>
+</servlet-mapping>
+
+</web-app>
